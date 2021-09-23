@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// Viết hàm tìm số lớn thứ rank trong mảng các số nguyên
 int FindMaxWithGivenRank(int *arr, int size, int rank = 1)
 {
 	int count = 0;
