@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std;
 
+// Tìm các số nhị phân gồm có n bit
 int a[100];
-int n=4;
+int n = 4;
 
 void inradaynhiphan (int a[], int n)
 {
@@ -15,12 +16,7 @@ void khoitaotohop (int i)
     for(int j=0;j<=1;j++)
     {
         a[i] = j;
-        cout << "i = " << i << " -> ";
-        cout << "Vong for thu " << j << endl;
-        if(i == n)
-		{
-			inradaynhiphan(a,n);
-		}
+        if(i == n) inradaynhiphan(a,n);
         else khoitaotohop (i+1);
     }
 }
