@@ -1,3 +1,5 @@
+Đề bài: Tìm số n lớn nhất sao cho tổng từ 1 đến n nhỏ hơn S (được nhập từ bàn phím).
+
 Công thức tổng dãy số từ 1 đến n: n*(n+1)/2
 
 Theo đề bài, ta có: (S là số biết trước)
