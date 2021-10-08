@@ -1,0 +1,22 @@
+Công thức tổng dãy số từ 1 đến n: n*(n+1)/2
+
+Theo đề bài, ta có: (S là số biết trước)
+	S > n*(n+1) / 2
+	=> 2*S > n*(n+1)
+	2*S > n^2 + n
+=> Bất đẳng thức: (n^2 + n - 2*S) < 0
+
+Delta = 1 - 4*(-2*S) = 1 + 8*S (luôn dương với mọi S > 0)
+	x1 = (- 1 - sqrt(Delta)) / 2
+	x2 = -2*S / x1 (Định lý Vi-ét ~ x1*x2 = c/a)
+Ta được tập nghiệm có dạng [1, xMAX) => Bởi vì n chắc chắn phải bắt đầu từ 1. Nếu ra nghiệm âm thì bỏ đi.
+========================
+Ví dụ: S = 21
+Ta có: 
+n^2 + n - 42 < 0
+	=> delta = 1 + 4*42 = 169 => sqrt(delta) = 13
+	x1 = (-1 - 13)/2 = -7
+	x2 = -42/-7 = 6
+Vậy ta có tập nghiệm là [1, 6) 
+=> Số cần tìm là 5: 1 + 2 + 3 + 4 + 5 = 15. Nếu cộng 6 thì thành 21 = S
+
